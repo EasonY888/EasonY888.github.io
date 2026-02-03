@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Curved Text with jQuery</title>
+
+<!-- link to jQuery library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<!-- link to the arctext() method -->
+<script src="https://cdn.jsdelivr.net/gh/codrops/Arctext/js/jquery.arctext.js"></script>
+
+<!-- the different styles. radius cannot be less than half the text length -->
+<script>
+$(document).ready (function() {
+     $('.style1').arctext({radius: 130});
+     $('.style2').arctext({radius: 210});
+     $('.style3').arctext({radius: 130, dir: -1});
+     $('.style4').arctext({radius: 130, dir: -1, rotate: false});
+});
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+<main style="width:400px; height:270px; border:2px dashed CadetBlue; text-align:center; color: Crimson;">
+<div class="style1">jQuery arctext() Method</div>
+<img src = "https://pluspng.com/img-png/jquery-logo-png--512.png" style="width:200px; height:auto; margin-top:20px;" alt = "jQuery logo">
+<div class="style3">Can be in reverse direction</div>
+</div>
+</main>
+
+<main style="width:400px; height:270px; border:2px dashed CadetBlue; text-align:center; color: DarkBlue; margin-top:10px;">
+<div class="style2">larger radius arc</div>
+<img src = "https://ihypress.de/wallpapers/astronomy/wallpaper.php?image=23" style="width:200px; height:200px; margin-top:0px; border-radius:50%; object-fit: cover;" alt = "Helix Nebula">
+<div class="style4">The Helix Nebula</div>
+</div>
+</main>
+
+</body>
+</html> 
